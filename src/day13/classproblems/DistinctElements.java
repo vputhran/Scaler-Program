@@ -2,14 +2,16 @@
 
 package day13.classproblems;
 
+import java.sql.SQLOutput;
 import java.util.HashSet;
 
 public class DistinctElements {
     public static void main(String[] args) {
-        int ar[] = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5};
+        int ar[] = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 8};
         System.out.println(distElements(ar));
 
         int ar1[] = new int[]{6, 3, 7, 3, 8, 6, 9, 4};
+        System.out.println(forDistElements(ar1));
         System.out.println(forDistElements(ar1));
     }
 
