@@ -1,22 +1,20 @@
 package day61_intermediate_sorting.assignements;
 
+/* Link - https://www.scaler.com/academy/mentee-dashboard/class/14728/assignment/problems/372/?navref=cl_pb_nv_tb */
+
 /* Q1. Given an integer array A, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p.
-* Example Input
+* Example Input 1:  A = [3, 2, 1, 3]
 
-Input 1:
+Input 2:  A = [1, 1, 3, 3]
+ Example Output
 
- A = [3, 2, 1, 3]
-Input 2:
+Output 1:  1
+Output 2:  -1
 
- A = [1, 1, 3, 3]
- * Example Output
+Example Explanation
 
-Output 1:
-
- 1
-Output 2:
-
- -1*/
+Explanation 1:  For integer 2, there are 2 greater elements in the array. So, return 1.
+Explanation 2:  There is no such integer exists.*/
 
 import java.util.*;
 
