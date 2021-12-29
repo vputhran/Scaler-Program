@@ -8,7 +8,7 @@ package day51_Intermediate_introduction_to_arrays.classprograms;
 public class Q2_ArrayPairSum {
     public static void main(String[] args) {
         int[] ar = {3, -2, 1, 4, 3, 6, 8};
-        int K = 13;
+        int K = 10;
         System.out.println(pairSum_2Pointers(ar, K));
     }
 
