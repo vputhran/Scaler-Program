@@ -16,7 +16,7 @@ public class Q5_RotateArray {
         System.out.println(Arrays.toString(rotateArray_ReverseLogic(ar, 2)));
     }
 
-    // My Logic - Save the last element and move the remaining elements by one step
+    // My Logic - Save the last element and move the remaining elements by one step at a time
     public static int[] rotateArray(int[] A, int k) {
 
         int l = A.length - 1;
