@@ -6,7 +6,7 @@ package day51_Intermediate_introduction_to_arrays.classprograms;
 
 import java.util.Arrays;
 
-public class Q5_RotateArray {
+public class Q5_RotateArray_K_Time {
     public static void main(String[] args) {
         int[] ar = {-3, 4, 2, 8, 7, 9, 6, 2, 10};
         System.out.println(Arrays.toString(ar));
