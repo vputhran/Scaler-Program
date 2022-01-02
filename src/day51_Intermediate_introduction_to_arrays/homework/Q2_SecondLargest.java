@@ -66,16 +66,18 @@ public class Q2_SecondLargest {
     }
 
     public static int secLargest(int[] A) {
-        int largest= A[0];
-        int secLargest = A[0];
+        int largest= Integer.MIN_VALUE;
+        int secLargest = Integer.MIN_VALUE;
 
-        if ((A.length == 1) || (A == null)) {
+        if (A.length == 1) {
             return -1;
         }else {
-            for (int i = 0; i < A.length; i++) {
-                if (A[i] > largest) {
+            for (int j : A) {
+                if (j > largest) {
                     secLargest = largest;
-                    largest = A[i];
+                    largest = j;
+                } else if (j > secLargest) {
+                    secLargest = j;
                 }
             }
 
