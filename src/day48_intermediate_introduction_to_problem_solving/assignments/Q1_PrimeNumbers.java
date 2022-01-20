@@ -1,8 +1,8 @@
-package day48_intermediate_introduction_to_problem_solving.classprograms;
+package day48_intermediate_introduction_to_problem_solving.assignments;
 
 import java.util.Scanner;
 
-public class PrimeNumbers {
+public class Q1_PrimeNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
