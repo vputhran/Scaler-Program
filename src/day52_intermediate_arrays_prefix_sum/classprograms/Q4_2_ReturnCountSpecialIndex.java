@@ -11,7 +11,7 @@ public class Q4_2_ReturnCountSpecialIndex {
         ePS[0] = ar[0];
         for (int i = 1; i < ar.length; i++) {
             if (i % 2 == 0) {
-                ePS[i] = ePS[i - 1] + ar[0];
+                ePS[i] = ePS[i - 1] + ar[i];
             } else {
                 ePS[i] = ePS[i - 1];
             }
@@ -40,9 +40,6 @@ public class Q4_2_ReturnCountSpecialIndex {
             if (i == 0) {
                 eSum = oRange;
                 oSum = eRange;
-            } else if (i == ar.length - 1) {
-                eSum = ePS[i - 1];
-                oSum = oPS[i - 1];
             } else {
                 eSum = ePS[i - 1] + oRange;
                 oSum = oPS[i - 1] + eRange;
