@@ -11,7 +11,7 @@ public class Q3_PickFromBothSides {
     }
 
     public static int solve(ArrayList<Integer> A, int B) {
-        int sum = Integer.MIN_VALUE;
+        int sum = Integer.MIN_VALUE; // Since u will be comparing to get the max - don't set it to 0, set it to MIN_Value
 
         //Creating the Prefix Sum arraylist
         ArrayList<Integer> prefixArr = new ArrayList<>();
@@ -33,10 +33,10 @@ public class Q3_PickFromBothSides {
         int ans;
 
         for (int i = 0; i <= B; i++) {
-            if (i == 0) {
+            if (i == 0) { //Get the sum of first 3 elements of the array -> 3rd element of the prefix array
                 ans = prefixArr.get(B - 1);
                 sum = Math.max(sum, ans);
-            } else if (i == B) {
+            } else if (i == B) { // Get the sum of the last 3 elements of the array --> 3rd element of the suffix array from the end
                 ans = suffixArr.get(suffixArr.size() - 1 - B + 1);
                 sum = Math.max(sum, ans);
             } else {
