@@ -19,6 +19,7 @@ public class Q4_RangeSumQuery {
 
     public static ArrayList<Long> rangeSum(ArrayList<Integer> A, ArrayList<ArrayList<Integer>> B) {
         ArrayList<Long> preSum = new ArrayList<>(); // Long because of large in puts
+        //Adding 0 to preSum(0) because this array needs to start with 0 for calculation --> [0,1,3,4,10,15]
         preSum.add(0L); // L -->  Signifies long value
         for (int i = 1; i <= A.size() ; i++) {
             preSum.add((long)preSum.get(i - 1) + A.get(i-1));
