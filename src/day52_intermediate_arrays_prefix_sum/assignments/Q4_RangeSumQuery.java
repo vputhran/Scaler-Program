@@ -6,28 +6,27 @@ import java.util.Arrays;
 public class Q4_RangeSumQuery {
     public static void main(String[] args) {
         ArrayList<Integer> A = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        ArrayList<ArrayList<Integer>> B = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> B = new ArrayList<>();
         B.add(
-                new ArrayList<Integer>(Arrays.asList(1,4)));
+                new ArrayList<>(Arrays.asList(1, 4)));
         B.add(
-                new ArrayList<Integer>(Arrays.asList(2,3)));
+                new ArrayList<>(Arrays.asList(2, 3)));
         B.add(
-                new ArrayList<Integer>(Arrays.asList(3,4)));
-//        System.out.println(rangeSum(A,B));
-        rangeSum(A,B);
+                new ArrayList<>(Arrays.asList(3, 4)));
+        System.out.println(rangeSum(A,B));
+
     }
 
-    public static void rangeSum(ArrayList<Integer> A, ArrayList<ArrayList<Integer>> B) {
-        ArrayList<Integer> preSum = new ArrayList<>();
-        preSum.add(A.get(0));
-        for (int i = 1; i < A.size() ; i++) {
-            preSum.add(preSum.get(i - 1) + A.get(i));
+    public static ArrayList<Long> rangeSum(ArrayList<Integer> A, ArrayList<ArrayList<Integer>> B) {
+        ArrayList<Long> preSum = new ArrayList<>(); // Long because of large in puts
+        preSum.add(0L); // L -->  Signifies long value
+        for (int i = 1; i <= A.size() ; i++) {
+            preSum.add((long)preSum.get(i - 1) + A.get(i-1));
         }
         ArrayList<Long> sum = new ArrayList<>();
         for (int i = 0; i < B.size(); i++) {
-            for (int j = 0; j < 2; j++) {
-                sum.add(Long.valueOf(preSum.get(B.get(i).get(j+1)-1)- preSum.get(B.get(i).get(j)-1)));
-            }
+                sum.add(preSum.get(B.get(i).get(1)) - preSum.get(B.get(i).get(0) - 1));
         }
+        return sum;
     }
 }
