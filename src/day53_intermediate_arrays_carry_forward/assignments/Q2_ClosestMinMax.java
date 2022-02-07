@@ -1,4 +1,4 @@
-package day53.assignments;
+package day53_intermediate_arrays_carry_forward.assignments;
 
 import java.util.Scanner;
 
