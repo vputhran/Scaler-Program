@@ -26,14 +26,14 @@ public class Q5_ToggleLightBulbs {
     }
 
     // Optimised approach
-    public static int toggleBulbOptimised(int[] b) {
+    public static int toggleBulbOptimised(int[] A) {
         int currentState;
         int switchPress = 0;
-        for (int i = 0; i < b.length; i++) {
+        for (int i = 0; i < A.length; i++) {
             if (switchPress % 2 == 0) {
-                currentState = b[i];
+                currentState = A[i];
             } else {
-                currentState = (b[i] == 0 ? 1 : 0); //  Ternary Operator --> variable = Expression1 ? Expression2: Expression3
+                currentState = (A[i] == 0 ? 1 : 0); //  Ternary Operator --> variable = Expression1 ? Expression2: Expression3
 //                currentState = 1 - b[i]; // This will also toggle the bit
             }
             if (currentState == 0) {
