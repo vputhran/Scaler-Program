@@ -1,4 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.homework;
+package day54_intermediate_arrays_subarrays.homework;
 
 import java.util.ArrayList;
 import java.util.Arrays;

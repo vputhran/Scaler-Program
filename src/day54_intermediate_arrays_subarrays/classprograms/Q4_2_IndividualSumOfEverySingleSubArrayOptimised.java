@@ -1,4 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.classprograms;
+package day54_intermediate_arrays_subarrays.classprograms;
 
 public class Q4_2_IndividualSumOfEverySingleSubArrayOptimised {
     public static void main(String[] args) {

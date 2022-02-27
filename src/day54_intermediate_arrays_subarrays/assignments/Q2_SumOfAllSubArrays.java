@@ -1,4 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.assignments;
+package day54_intermediate_arrays_subarrays.assignments;
 
 public class Q2_SumOfAllSubArrays {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.homework;
+package day54_intermediate_arrays_subarrays.homework;
 
 public class Q1_CountingSubArraysEasy {
     public static void main(String[] args) {

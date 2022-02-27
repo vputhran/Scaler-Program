@@ -1,4 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.assignments;
+package day54_intermediate_arrays_subarrays.assignments;
 
 public class Q4_MaximumSubArrayEasy {
     public static void main(String[] args) {

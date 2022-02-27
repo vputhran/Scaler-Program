@@ -1,6 +1,4 @@
-package Day54_Intermediate_arrays_subarrays.assignments;
-
-import javax.swing.*;
+package day54_intermediate_arrays_subarrays.assignments;
 
 public class Q1_MaxSumContiguousSubArray {
     public static void main(String[] args) {

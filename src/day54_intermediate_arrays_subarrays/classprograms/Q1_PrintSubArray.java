@@ -1,8 +1,8 @@
-package Day54_Intermediate_arrays_subarrays.classprograms;
+package day54_intermediate_arrays_subarrays.classprograms;
 
 import java.util.Scanner;
 
-public class Q2_SubArraySum {
+public class Q1_PrintSubArray {
     public static void main(String[] args) {
         int[] ar = {2, 4, 5, -1, 3, 6, 8, 9};
         Scanner sc = new Scanner(System.in);
@@ -10,14 +10,13 @@ public class Q2_SubArraySum {
         int srt = sc.nextInt();
         System.out.print("End Index ");
         int end = sc.nextInt();
-        System.out.println(subSum(ar,srt,end));
+        printSub(ar, srt, end);
     }
 
-    public static int subSum(int[] A, int start, int end) {
-        int sum = 0;
-        for (int i = start; i <= end ; i++) {
-            sum += A[i];
+    public static void printSub(int[] a, int srtIndex, int endIndex) {
+
+        for (int i = srtIndex; i <= endIndex; i++) {
+            System.out.print(a[i]+" ");
         }
-        return sum;
     }
 }
