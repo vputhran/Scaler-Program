@@ -2,7 +2,7 @@ package day61_intermediate_sorting.classprograms;
 
 import java.util.Arrays;
 
-public class Q4_Comparator {
+public class Q4_SortArrayBasedOnNumberOfFactors_NOT_CORRECT {
     public static void main(String[] args) {
         int[] ar = {9, 3, 4, 8, 16, 37, 6, 13, 15};
 
