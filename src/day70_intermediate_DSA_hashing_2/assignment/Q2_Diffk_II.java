@@ -23,14 +23,14 @@ public class Q2_Diffk_II {
     public static int diffPossible(final List<Integer> A, int B) {
         HashMap<Integer,Integer> hm = new HashMap<>();
         for (int i = 0; i < A.size(); i++) {
-            if (A.get(i) == 0 && hm.containsKey(B)) {
-                return 1;
-            }
-            int val = B + A.get(i);
-            if (hm.containsValue(val)) {
+
+            int val = A.get(i) + B;
+            int nval = A.get(i) - B;
+            if (hm.containsKey(val) || hm.containsKey(nval)) {
                 return 1;
             } else {
                 hm.put(A.get(i), val);
+                hm.put(A.get(i), nval);
             }
         }
         return 0;
