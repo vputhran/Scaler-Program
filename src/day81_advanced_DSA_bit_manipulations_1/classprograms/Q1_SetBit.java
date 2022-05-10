@@ -18,7 +18,7 @@ public class Q1_SetBit {
         } else return false;
     }
 
-    //Using Left shift - 
+    //Using Left shift -
     public static boolean checkBitRightShift(int N, int i) {
         if ((N & (1 << i)) == (1 << i)) {
             return true;
