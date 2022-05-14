@@ -2,7 +2,7 @@ package day85_advanced_DSA_maths_prime_numbers.classprograms;
 
 public class Q1_Check_If_PrimeOrNot {
     public static void main(String[] args) {
-        int n = -1;
+        int n = 37;
         System.out.println(isPrime(n));
     }
 
